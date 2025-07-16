@@ -101,3 +101,14 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+// ...existing code...
+repositories {
+    mavenCentral()
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+
+dependencies {
+    implementation 'org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT'
+    // 你可以根據你的伺服器版本調整版本號
+}
+// ...existing code...
