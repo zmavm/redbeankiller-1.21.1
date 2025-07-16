@@ -1,0 +1,54 @@
+{
+	"schemaVersion": 1,
+	"id": "redbeankiller",
+	"version": "${version}",
+	"name": "Redbeankiller",
+	"description": "hong do xiang cho ni le baby",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/redbeankiller/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "name.modid.Redbeankiller",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "name.modid.RedbeankillerClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "name.modid.RedbeankillerDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"redbeankiller.mixins.json",
+		{
+			"config": "redbeankiller.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
