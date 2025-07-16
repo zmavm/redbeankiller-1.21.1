@@ -1,2 +1,2 @@
 # redbeankiller-1.21.1
-www
+Minecraft fabricMod 1.21.1
