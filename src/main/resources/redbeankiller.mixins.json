@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "name.modid.mixin",
+	"package": "redbeankiller.redbeankiller.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"
